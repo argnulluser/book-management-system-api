@@ -2,7 +2,6 @@ package com.example.book_management_system_api.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;
-import org.springframework.boot.autoconfigure.domain.EntityScan;
 
 @Entity
 @Table(name = "books")
