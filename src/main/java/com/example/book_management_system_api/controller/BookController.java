@@ -48,7 +48,7 @@ public class BookController {
     }
 
     @PostMapping
-    public ResponseEntity<BookDto> addBook(@RequestBody BookDto bookDto) { // Fixed: Accepts DTO
+    public ResponseEntity<BookDto> addBook(@RequestBody BookDto bookDto) {
         var bookEntity = bookMapper.toEntity(bookDto);
         var savedBook = bookService.addBook(bookEntity);
 
